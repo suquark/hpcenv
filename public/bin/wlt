@@ -1,0 +1,8 @@
+#!/bin/bash
+url=http://wlt.ustc.edu.cn/cgi-bin/ip
+touch /tmp/wlt
+read -p "Enter your name:" name
+read -s -p "Enter your password:" pass
+curl -c /tmp/wlt "$url?cmd=login&name=$name&password=$pass&520" > /dev/null
+curl -b /tmp/wlt "$url?cmd=set&type=0&exp=0" > /dev/null
+rm /tmp/wlt

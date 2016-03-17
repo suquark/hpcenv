@@ -1,0 +1,45 @@
+[33;1m=======> NOTICE <=======[0m
+This cluster has 7 nodes.
+'hostfile' is in /public
+All configs lie in [36m/public/config[0m
+
+[33mYou are supposed to change global login-enviroments in /etc/profile.d/custom.sh[0m
+
+[37;1mEach equipped with:[0m 
+
+- 128G Intel SSD * 1
+- Intel(R) Xeon(R) CPU E5-2660 0 @ 2.20GHz * 2, 16 cores in total. 32 cores when HT is enabled.  
+- NVIDIA Tesla m**** GPU * 2  (ONLY with part of them)
+- SwitchX - Mellanox Technologies ( Could be 14.0625 Gbps) hca_id : mlx4_0 * 1
+
+[37;1mUseful commands:[0m
+
+ib.+ / ibv_.+  # Manage or gain information about Infiniband
+lscpu/lspci/lsmod
+vim /etc/motd # To edit this page :)
+
+Disable HyperThread: http://serverfault.com/questions/235825/disable-hyperthreading-from-within-linux-no-access-to-bios
+
+The cluster has had Mellanox's OFED Infiniband Driver installed. And they share a 128G Intel SSD over nfs-rdma, mounted at /public for all nodes.
+ 
+[32mYou are supposed to download what you need in '/public/opt/download', and install anything that are cluster-related in '/public/opt'. Leave your configurations & notes in '/public/config'.[0m
+
+[37;1mWhat we have installed:[0m
+
+* Mellanox's OFED Infiniband Driver (For CentOS 7)
+* Intel Paralell Studio XE 2016 (VTune, Trace Analyzer, MKL, icc/ifort/impi, etc.)
+* OpenMPI-1.10.2
+* NVIDIA CUDA GPU Toolkit (need a reboot to install the driver)
+
+[37;1mWhat are supposed to install later:[0m
+
+* BLAS library
+* Paratune/Paramon
+* NVIDIA CUDA GPU Development Package
+
+~ When u r in trouble, u may complain with Mr. $PATH and $LD_LIBRARY_PATH about it.
+
+[37;1m[ [31;1mERROR[37;1m ] node6 seems to be broken. Temporarily removed from 'hostfile'.[0m
+
+
+

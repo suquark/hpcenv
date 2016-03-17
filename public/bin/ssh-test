@@ -1,0 +1,16 @@
+#!/bin/bash
+cat<<-EOF 
+==============
+Basic SSH Test
+==============
+## This test checks 
+- root's account on every node
+- web connection to computing nodes
+- OpenSSH, OpenSSL
+
+* It needs root's account
+EOF
+
+fornode echo "ok"
+
+

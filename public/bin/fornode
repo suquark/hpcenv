@@ -1,0 +1,6 @@
+for node in $nodes; do
+	echo "[$node]"
+	ssh $node $@
+done
+unset node
+

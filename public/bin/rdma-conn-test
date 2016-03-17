@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ $1 ] && [ $2 ] ; then
+  ssh node$1 udaddy&
+  ssh node$2 udaddy node$2 -s 10.0.0.$1
+else
+  echo "Please enter 2 numbers."
+fi

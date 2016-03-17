@@ -1,0 +1,17 @@
+PACKAGE IF91719CD INTEL 2016.1112 FAA63ADFC901 COMPONENTS="AdvXEl \
+	CCompL Comp-CL Comp-DCAF Comp-FL Comp-OpenMP \
+	Comp-PointerChecker DAAL-L DbgL FCompL IClsTktL IClsValL \
+	ITrAnlL ITrAnlW ITrColL MKernL MPassL PerfAnl PerfPrimL \
+	StaticAnlL ThreadAnlGui ThreadBB" OPTIONS=SUITE ck=161 \
+	SIGN=B0A1B12A9478
+INCREMENT IF91719CD INTEL 2016.1112 12-nov-2016 uncounted \
+	AF722D546DEF VENDOR_STRING="SUPPORT=STU \
+	https://registrationcenter.intel.com" HOSTID="002590957c1e \
+	002590957c1f" PLATFORMS="i86_r i86_re it64_lr it64_re amd64_re \
+	i86_mac x64_mac" ck=140 SN=SMSA36KW3FHZ SIGN=631C4B941840
+#
+# SerialNumber=2JXL-36KW3FHZ
+#
+#
+# SerialNumber=2JXL-36KW3FHZ
+#

@@ -1,0 +1,9 @@
+[ ! $config ] && echo "ERROR: WRONG ENVIRONMENT" && exit 1
+cp -u /etc/hosts $config/etc/hosts
+cp -u /etc/passwd $config/etc/passwd
+cp -u /etc/shadow $config/etc/shadow
+cp -u /etc/group $config/etc/group
+cp -u /etc/motd $config/etc/motd
+cp -u /etc/default/useradd $config/etc/default/useradd
+cp -u /etc/profile.d/custom.sh $config/etc/profile.d/custom.sh
+
