@@ -3,8 +3,10 @@
 # Dependency : mellaonx_Infiniband $PUBLIC $others
 # assume : io_node=login_node=node1
 
-[ ! $ENV_FLAG ]  && echo "Bad env!" && exit 1
+[ ! $ENV_FLAG ]  && echo "Bad env!" && exit 1case  in
+*)
 
+esac
 ionode_ip=10.0.0.10
 echo "ionode_ip = $ionode_ip"
 echo "clinet = $others"

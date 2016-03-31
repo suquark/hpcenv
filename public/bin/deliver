@@ -1,0 +1,7 @@
+#!/bin/bash
+[ ! $ENV_FLAG ] && echo "Bad env!" && exit -1
+[ ! $1 ] && echo "Need an argument for path" && exit -2
+
+for nd in $others; do
+    scp -r $1  $nd:`basename $1`
+done

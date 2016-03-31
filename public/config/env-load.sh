@@ -1,3 +1,9 @@
+#
+# This script is an environment loader.
+# It should be sourced first after user-login.
+#
+
+# If a dir does not exists, create it.
 chkdir() {
     local i
     for i in $@; do
@@ -24,7 +30,9 @@ export DOWNLOAD=$PUBLIC_OPT/download
 # hostfile/Nodes
 export hostfile=$PUBLIC/hostfile
 export nodes=`cat $hostfile`
-export cnodes=`grep [^node1] $hostfile`
+export me=`hostname`
+export others=`grep -v $me $hostfile`
+export cnodes=`grep -v node1\$ $hostfile`
 
 # CUDA Env.
 export CUDA_PATH=/usr/local/cuda
