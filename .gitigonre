@@ -1,2 +1,3 @@
-intel_lic\*
-.DS_Store\
+intel_lic/*
+.DS_Store/
+.idea/*

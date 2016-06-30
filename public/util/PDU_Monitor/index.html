@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>PDU</title>
+    <script type="text/javascript" src="jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="highstock.js"></script>
+    <script type="text/javascript" src="exporting.js"></script>
+    <script type="text/javascript" src="d3.v3.js"></script>
+    <script type="text/javascript" src="pdu-highcharts.js"></script>
+    <script type="text/javascript">
+    function change(){
+        var origin = location.href.split("?")[0];
+        location.href = origin + "?" + document.getElementById('time').value;
+    }
+    </script>
+</head>
+<body>
+<div style="margin: 0 auto; padding: 0 30px">
+    <input id="time" type="TEXT"></input>
+    <INPUT type="BUTTON" onclick="change()" value="Change Time"></input>
+    <div id="container-ampere1" style="height: 300px; min-width: 310px"></div>
+    <div id="container-ampere2" style="height: 300px; width: 45%; float: left;"></div>
+    <div id="container-ampere3" style="height: 300px; width: 45%; float: right;"></div>
+</div>
+</body>
+</html>

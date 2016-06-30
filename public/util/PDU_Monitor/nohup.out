@@ -1,0 +1,52 @@
+202.38.79.174 - - [26/Apr/2016 21:35:01] "GET / HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:01] "GET /jquery-1.9.1.js HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:01] "GET /exporting.js HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:01] "GET /highstock.js HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:01] "GET /pdu-highcharts.js HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:01] "GET /d3.v3.js HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:01] "GET /2016042621data.tsv HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:01] "GET /2016042621data.tsv HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:01] "GET /2016042621data.tsv HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:06] "GET /2016042621data.tsv HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:11] "GET /2016042621data.tsv HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:16] "GET /2016042621data.tsv HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:21] "GET /2016042621data.tsv HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:22] "GET / HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:22] "GET /jquery-1.9.1.js HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:22] "GET /highstock.js HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:22] "GET /exporting.js HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:22] "GET /d3.v3.js HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:22] "GET /pdu-highcharts.js HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:22] "GET /2016042621data.tsv HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:22] "GET /2016042621data.tsv HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:22] "GET /2016042621data.tsv HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:27] "GET /2016042621data.tsv HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:30] "GET / HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:30] "GET /jquery-1.9.1.js HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:31] "GET /highstock.js HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/SocketServer.py", line 293, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python2.6/SocketServer.py", line 319, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python2.6/SocketServer.py", line 332, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python2.6/SocketServer.py", line 627, in __init__
+    self.handle()
+  File "/usr/lib64/python2.6/BaseHTTPServer.py", line 329, in handle
+    self.handle_one_request()
+  File "/usr/lib64/python2.6/BaseHTTPServer.py", line 323, in handle_one_request
+    method()
+  File "/usr/lib64/python2.6/SimpleHTTPServer.py", line 46, in do_GET
+    self.copyfile(f, self.wfile)
+  File "/usr/lib64/python2.6/SimpleHTTPServer.py", line 177, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "/usr/lib64/python2.6/shutil.py", line 31, in copyfileobj
+    fdst.write(buf)
+  File "/usr/lib64/python2.6/socket.py", line 324, in write
+    self.flush()
+  File "/usr/lib64/python2.6/socket.py", line 303, in flush
+    self._sock.sendall(buffer(data, write_offset, buffer_size))
+error: [Errno 32] Broken pipe
+202.38.79.174 - - [26/Apr/2016 21:35:35] "GET /exporting.js HTTP/1.1" 200 -
+202.38.79.174 - - [26/Apr/2016 21:35:35] "GET /d3.v3.js HTTP/1.1" 200 -
